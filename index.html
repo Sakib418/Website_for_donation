@@ -46,10 +46,11 @@
 </head>
 <body class="font-[lexend]">
    <!-- Nav -->
-<header class="font-lexend mb-20">
-    <div class="navbar bg-base-100  fixed top-0 left-0 w-full drop-shadow-sm bg-opacity-80  bg-red-50 pt-2 pb-6 px-6 font-lexend">
+<header class="font-lexend mb-20 sticky top-0 bg-white/10 backdrop-blur-lg shadow-lg">
+  <!-- fixed top-0 left-0 w-full drop-shadow-sm bg-opacity-80 -->
+    <div class="navbar bg-base-100  bg-red-50 pt-2 pb-6 px-6 font-lexend">
         <div class="navbar-start">
-          <a><button class="btn btn-active bg-[#B4F461] font-bold text-sm text-black">Blog</button></a>
+          <a href="blog.html" id="blog"><button class="btn btn-active bg-[#B4F461] font-bold text-sm text-black">Blog</button></a>
         </div>
         <div class="navbar-center hidden lg:flex gap-x-2">
           <div>
@@ -63,13 +64,15 @@
               </div>
               <h3 id="capital" class="text-xl font-medium text-gray-500">55000</h3>
         </div>
+        
       </div>
+      <div class="flex  justify-center mt-8 gap-6 font-lexend mx-2 pb-2 lg:mx-36">
+        <button id="btn-donation" class="btn font-semibold btn-outline bg-white text-gray-600 hover:bg-[#B4F461] hover:text-black focus:bg-[#B4F461] focus:text-black  focus:ring focus:ring-lime-300" onclick="getDonationOrHistory('Donation-Section')">Donation</button>
+        <button id="btn-history" class="btn font-semibold  btn-outline bg-white text-gray-600 hover:bg-[#B4F461] hover:text-black focus:bg-[#B4F461] focus:text-black focus:ring focus:ring-lime-300" onclick="getDonationOrHistory('History-Section')">History</button>
+    </div>
 </header>
-<main class="mt-32 mx-2 lg:mx-36 font-lexend mb-16">
-<div class="flex justify-center gap-6 font-lexend">
-    <button id="btn-donation" class="btn font-semibold btn-outline bg-white text-gray-600 hover:bg-[#B4F461] hover:text-black focus:bg-[#B4F461] focus:text-black  focus:ring focus:ring-lime-300" onclick="getDonationOrHistory('Donation-Section')">Donation</button>
-    <button id="btn-history" class="btn font-semibold  btn-outline bg-white text-gray-600 hover:bg-[#B4F461] hover:text-black focus:bg-[#B4F461] focus:text-black focus:ring focus:ring-lime-300" onclick="getDonationOrHistory('History-Section')">History</button>
-</div>
+<main class="mt-24 mx-2 lg:mx-36 font-lexend mb-16">
+
 <!-- Donation Section -->
 <section id="Donation-Section" class="mt-6">
 <!-- Nookhali -->

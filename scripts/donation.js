@@ -1,1 +1,3 @@
-console.log("I am from donation");
+document.getElementById('blog').addEventListener('click',function(e){
+
+})
